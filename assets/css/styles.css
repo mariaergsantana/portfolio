@@ -37,10 +37,31 @@ html {
 
 body {
     height: 100vh;
-    background-color: var(--beige);
+    overflow: hidden;
+    /* background-color: var(--beige); */
+}
+
+#bg_video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 /* MAIN */
+header {
+    position: relative;
+    padding: 0 2rem;
+    z-index: 1;
+    color: white;
+}
+
 li {
     list-style: none;
 }
@@ -58,11 +79,6 @@ li {
     transition: font-size 0.2s ease;
 }
 
-
-header {
-    position: relative;
-    padding: 0 2rem;
-}
 
 .nav_bar ul {
     width: 100%;

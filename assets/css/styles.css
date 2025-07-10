@@ -79,9 +79,9 @@ header {
     margin-right: 40px;
 }
 
-.home {
+.home_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 4rem;
 }

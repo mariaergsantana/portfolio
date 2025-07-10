@@ -15,12 +15,11 @@
 /* ROOTS */
 :root {
     /* COLORS */
-    --dark-green: #142624;
-    --light-green: #324C47;
-    --dark-brown: #331F15;
-    --light-brown: #906642;
-    --purple: #733C4A;
-    --beige: #F0CBAD;
+    --puce: #BB7E8C;
+    --ultra-violet: #5F5980;
+    --powder-blue: #95B8D1;
+    --delft-blue: #2F3061;
+    --jet: #343434;
 }
 
 
@@ -68,13 +67,13 @@ li {
 
 .nav_content a {
     text-decoration: none;
-    color: var(--dark-brown);
+    color: var(--delft-blue);
     font-size: 1rem;
 }
 
 .nav_content a:hover {
-    color: var(--dark-green);
-    border-bottom: 3px solid var(--dark-green);
+    color: var(--powder-blue);
+    border-bottom: 3px solid var(--powder-blue);
     font-size: 1.1rem;
     transition: font-size 0.2s ease;
 }
@@ -110,22 +109,22 @@ li {
 }
 
 .intro_text h5 {
-    color: var(--dark-brown);
+    color: var(--powder-blue);
     font-size: 14px;
 }
 
 .intro_text h5 span {
-    color: var(--purple);
+    color: var(--delft-blue);
     font-size: 16px;
 }
 
 .intro_text h1 {
-    color: var(--purple);
+    color: var(--delft-blue);
     font-size: 3rem;
 }
 
 .intro_text p {
-    color: var(--dark-brown);
+    color: var(--powder-blue);
 }
 
 .social_media {
@@ -141,13 +140,13 @@ li {
     margin: 0 auto;
     margin-right: 8px;
     max-width: fit-content;
-    color: var(--light-brown);
+    color: var(--powder-blue);
     font-size: 1.5rem;
     transition: .5s;
 }
 
 .social_media_icon i:hover {
-    color: var(--purple);
+    color: var(--delft-blue);
     font-size: 2rem;
 }
 

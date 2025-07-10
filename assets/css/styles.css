@@ -37,22 +37,21 @@ html {
 
 body {
     height: 100vh;
-    background-image: url(../images/background-image-lighter.jpeg);
-    background-size: cover;
-    background-position: center;
+    background-color: var(--beige);
 }
 
+/* MAIN */
 li {
     list-style: none;
 }
 
-a {
+.nav_content a {
     text-decoration: none;
     color: var(--dark-brown);
     font-size: 1rem;
 }
 
-a:hover {
+.nav_content a:hover {
     color: var(--dark-green);
     border-bottom: 3px solid var(--dark-green);
     font-size: 1.1rem;
@@ -82,22 +81,16 @@ header {
 
 .home {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding-top: 4rem;
-}
-
-.home_container .profile_picture {
-    width: 300px;
-    height: 400px;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 .intro_text {
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 }
 
 .intro_text h5 {
@@ -115,5 +108,147 @@ header {
     font-size: 3rem;
 }
 
+.intro_text p {
+    color: var(--dark-brown);
+}
+
+.social_media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social_media_icon i {
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 8px;
+    max-width: fit-content;
+    color: var(--light-brown);
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+.social_media_icon i:hover {
+    color: var(--purple);
+    font-size: 2rem;
+}
 
 
+/* MEDIA QUERY FOR NAVBAR */
+@media screen and (max-width: 930px) {
+    header {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        height: 100vh;
+        z-index: 3;
+        padding: 25px 0px;
+    }
+    .nav_bar li {
+        display: block;
+    }
+    .nav_bar li a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .home_container .profile_picture {
+        margin-right: 15px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    header {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        padding: 25px 0px;
+        margin: 0 auto;
+    }
+    .nav_bar {
+        display: flex;
+        justify-content: center;
+    }
+    .nav_bar li {
+        display: block;
+    }
+    .nav_bar li a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .home_container .profile_picture {
+        margin-right: 15px;
+        margin-top: 3rem;
+    }
+    .home {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .intro_text {
+        padding: 40px 0px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    header {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        padding: 25px 0px;
+        margin: 0 auto;
+    }
+    .nav_bar {
+        display: flex;
+        justify-content: center;
+        margin-left: -8rem;
+    }
+    .nav_bar li {
+        display: block;
+        margin-right: 15px;
+    }
+    .nav_bar li a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .home_container .profile_picture {
+        margin-right: 15px;
+        margin-top: 3rem;
+    }
+    .home {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .intro_text {
+        padding: 20px 0px;
+    }
+    .intro_text h5 {
+        font-size: 12px;
+    }
+    .intro_text h5 span {
+        font-size: 14px;
+    }
+    .intro_text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ABOUT */
+/* .about .profile_picture {
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+} */

@@ -37,7 +37,7 @@ html {
 body {
     height: 100vh;
     overflow: hidden;
-    /* background-color: var(--beige); */
+    background-color: var(--jet);
 }
 
 #bg_video {
@@ -95,14 +95,14 @@ li {
 }
 
 .home_container {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     align-items: center;
     padding-top: 4rem;
 }
 
 .intro_text {
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
@@ -110,17 +110,30 @@ li {
 
 .intro_text h5 {
     color: var(--powder-blue);
-    font-size: 14px;
-}
-
-.intro_text h5 span {
-    color: var(--delft-blue);
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .intro_text h1 {
     color: var(--delft-blue);
-    font-size: 3rem;
+    font-size: 4rem;
+    letter-spacing: 2.5px;
+    border-right: 7px solid;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s,
+        cursor .4s step-end infinite;
+}
+
+/* BLINKING CURSOR */
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+/* TYPING EFFECT */
+@keyframes typing {
+    from {width: 0;}
 }
 
 .intro_text p {
